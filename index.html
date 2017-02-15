@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+  <head>
+    <title>QA Checklist</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="the best.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Titillium+Web:300,700,300italic">
+    <link rel="stylesheet" href="vendor/vendor.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="vendor/vendor.js"></script>
+  </head>
+  <body>
+
+    <header class="checklist-heading">
+      <h1 class="page-title">QA Checklist</h1>
+      <a class="toggle-all" href="#">expand all</a>
+    </header>
+
+    <main class="checklist-container">
+      <form>
+        <ul class="accordion">
+          <li class="accordion-group">
+            <input class="accordion-control" type="checkbox" >
+            <i></i>
+            <h2>Introduction</h2>
+            <p class="checklist-group">
+              QA sucks but needs to be done. It's important for a number of different reasons, but most importantly it: prevents bugs from escaping to production, eliminates unnecessary tension between the business and clients, and reduces amount of future work that needs to be done.
+              <br><br>
+              Doing QA takes time and should be thorough. The only thing worse than not doing QA at all is doing QA halfheartedly. While performing QA work, it's important to try assuming the mindset and point of view of the user. Think and act the way they might as you're testing. To maximize efficiency and save time, QA should be performed throughout the whole development process. Find a bug while you're working? Fix it. Don't have time? Write a comment and carry on. The depth that you test will vary based on type of changes you make. As difficulty of implementation increases, so should the degree at which you test. If any part of a process (add to cart, quickshop modal, etc.) has been altered during development, then the whole process should be tested thoroughly. Finally, if you find any problems but are unable to remedy them, or notice an area of friction that might cause problems in the future, tell someone and then document in the code.
+            </p>
+          </li>
+          <li class="accordion-group">
+            <input class="accordion-control" type="checkbox" checked>
+            <i></i>
+            <h2>General</h2>
+            <ul class="checklist-group">
+              <li class="checklist-input-group">
+                <label for="general-0">Does work match original asset? if not, why?.</label>
+                <input class="checkbox" id="general-0" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-1">Has client's technical savvy been considered during implementation?</label>
+                <input class="checkbox" id="general-1" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-2">Is spelling, grammar, and mechanics correct?</label>
+                <input class="checkbox" id="general-2" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-3">Are there widow / orphan words in important paragraphs?</label>
+                <input class="checkbox" id="general-3" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-4">Are appropriate words capitalized?</label>
+                <input class="checkbox" id="general-4" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-5">Is there continuity amongst recurring / common phrases?</label>
+                <input class="checkbox" id="general-5" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-6">Do all links point to the correct place?</label>
+                <input class="checkbox" id="general-6" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-7">Is data in staging similar to data in production?</label>
+                <input class="checkbox" id="general-7" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-8">Is all test content protected behind a password of have an accompanying nofollow?</label>
+                <input class="checkbox" id="general-8" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-9">Has any process been altered? If yes, has it been completely tested?</label>
+                <input class="checkbox" id="general-9" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-10">Have all hard-coded links and data been updated?</label>
+                <input class="checkbox" id="general-10" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-13">Has all placeholder content been replaced?</label>
+                <input class="checkbox" id="general-13" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-11">Do forms, inputs, add to cart, etc. have success / fail feedback?</label>
+                <input class="checkbox" id="general-11" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="general-12">Have different types of pages been tested?
+                </label>
+                <input class="checkbox" id="general-12" type="checkbox" />
+              </li>
+            </ul>
+          </li>
+          <li class="accordion-group">
+            <input class="accordion-control" type="checkbox" checked>
+            <i></i>
+            <h2>Visual</h2>
+            <ul class="checklist-group">
+              <li class="checklist-input-group">
+                <label for="design-media-0">Do fonts look correct?</label>
+                <input class="checkbox" id="design-media-0" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="design-media-1">Do colors look correct?</label>
+                <input class="checkbox" id="design-media-1" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="design-media-2">Have images been minified and maintain aspect ratio?</label>
+                <input class="checkbox" id="design-media-2" type="checkbox" />
+              </li>
+            </ul>
+          </li>
+          <li class="accordion-group">
+            <input class="accordion-control" type="checkbox" checked>
+            <i></i>
+            <h2>Markup / Styles / Code</h2>
+            <ul class="checklist-group">
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-0">Do you know how/why your implementation works?</label>
+                <input class="checkbox" id="markup-styles-code-0" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-1">Does all noteworthy code have a comment?</label>
+                <input class="checkbox" id="markup-styles-code-1" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-2">Has all documentation (if applicable) been written?</label>
+                <input class="checkbox" id="markup-styles-code-2" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-3">Is your markup generally semantic?</label>
+                <input class="checkbox" id="markup-styles-code-3" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-4">All images have accompanying alt tag?</label>
+                <input class="checkbox" id="markup-styles-code-4" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-6">Console.logs, dead code, and old comments have been removed?</label>
+                <input class="checkbox" id="markup-styles-code-6" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-7">Open graph tags, product schema, and social sharing are correct?</label>
+                <input class="checkbox" id="markup-styles-code-7" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-8">Are css selectors easy to override?</label>
+                <input class="checkbox" id="markup-styles-code-8" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-9">Is your css organized in some fashion?</label>
+                <input class="checkbox" id="markup-styles-code-9" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="markup-styles-code-10">Have you used standard, 2-space, indentation?</label>
+                <input class="checkbox" id="markup-styles-code-10" type="checkbox" />
+              </li>
+            </ul>
+          </li>
+          <li class="accordion-group">
+            <input class="accordion-control" type="checkbox" checked>
+            <i></i>
+            <h2>Device Testing</h2>
+            <ul class="checklist-group">
+              <li class="checklist-input-group">
+                <label for="device-testing-0">Have you tested all major browsers (Chrome, Safari, Firefox, I.E.)?</label>
+                <input class="checkbox" id="device-testing-0" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="device-testing-1">Tested all applicable mobile devices (> 2.5%) via. browserstack?</label>
+                <input class="checkbox" id="device-testing-1" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="device-testing-2">Tested on any available physical mobile devices?</label>
+                <input class="checkbox" id="device-testing-2" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="device-testing-3">Considered connection speed on mobile devices while testing?</label>
+                <input class="checkbox" id="device-testing-3" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <div class="google-analytics-integration">
+                  <div class="authorize-container">
+                    Check current browser usage for: <button class="google-analytics-authorize" style="display:none;">Authorize</button>
+                  </div>
+                  <div class="account-property-profile-container">
+                    <div class="account-container">
+                      <span class="select-label">Account: </span>
+                      <select class="google-analytics-accounts ga-select">
+                        <option disabled selected></option>
+                      </select>
+                    </div>
+                    <div class="property-container">
+                      <span class="select-label">Property: </span>
+                      <select class="google-analytics-properties ga-select">
+                        <option disabled selected></option>
+                      </select>
+                    </div>
+                    <div class="profile-container">
+                      <span class="select-label">Profile: </span>
+                      <select class="google-analytics-profiles ga-select">
+                        <option disabled selected></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="visualization-table-container">
+                    <table class="google-visualization-table-table" cellspacing="0" style="width:100%;height: auto;">
+                      <thead>
+                        <tr class="gapi-analytics-data-chart-styles-table-tr-head">
+                          <th class="gapi-analytics-data-chart-styles-table-th unsorted">Browser</th>
+                          <th class="gapi-analytics-data-chart-styles-table-th unsorted">Browser Version</th>
+                          <th class="gapi-analytics-data-chart-styles-table-th unsorted">Operating System</th>
+                          <th class="gapi-analytics-data-chart-styles-table-th unsorted">Sessions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="odd">
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr class="odd">
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr class="odd">
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr class="odd">
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr class="odd">
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr class="odd">
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr class="odd">
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                          <td class="gapi-analytics-data-chart-styles-table-td">&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    if you accidentally authorized the wrong account, click <a href="https://security.google.com/settings/security/permissions" target="_blank">here</a>.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="accordion-group">
+            <input class="accordion-control" type="checkbox" checked>
+            <i></i>
+            <h2>Bug Reporting [beta]</h2>
+            <p class="checklist-group">
+              Bug Tracking in Asana:
+              <br>
+              &nbsp;&nbsp;<a href="https://asana.com/guide/videos/bug-tracking">Video</a>
+              <br>
+              &nbsp;&nbsp;<a href="https://blog.asana.com/2011/08/how-we-use-asana-for-bug-tracking/">Text</a>
+            </p>
+          </li>
+          <li class="accordion-group">
+            <input class="accordion-control" type="checkbox" checked>
+            <i></i>
+            <h2>QA Completion Checklist</h2>
+            <ul class="checklist-group">
+              <li class="checklist-input-group">
+                <label for="completion-0">Smoke testing has been carried out.</label>
+                <input class="checkbox" id="completion-0" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="completion-1">Implemented feature works as expected.</label>
+                <input class="checkbox" id="completion-1" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="completion-2">Component validates, submits, reports, and responds as expected.</label>
+                <input class="checkbox" id="completion-2" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="completion-3">Regression testing has been carried out.</label>
+                <input class="checkbox" id="completion-3" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="completion-4">Load testing / stress testing has been completed.</label>
+                <input class="checkbox" id="completion-4" type="checkbox" />
+              </li>
+              <li class="checklist-input-group">
+                <label for="completion-5">Key user journeys have been traveled repeatedly.</label>
+                <input class="checkbox" id="completion-5" type="checkbox" />
+              </li>
+            </ul>
+          </li>
+          <li class="accordion-group">
+            <input class="accordion-control" type="checkbox" checked>
+            <i></i>
+            <h2>Issues Regularly Encountered</h2>
+            <p class="checklist-group">
+              Any commonly encountered issues should go here.
+            </p>
+          </li>
+        </ul>
+      </form>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=authorize"></script>
+
+  </body>
+</html>
